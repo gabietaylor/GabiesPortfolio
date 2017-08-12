@@ -188,7 +188,7 @@ img {max-width: 100%;}
 	font-family:'Playball',cursive;
 	font-size:35px;
 	color:#333;
-	margin:0;
+	margin:40px;
 	padding:5px;
 }
 .heading h2::first-letter {
