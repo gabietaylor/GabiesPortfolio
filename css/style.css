@@ -1,3 +1,9 @@
+/*
+    Theme Name: MyResume
+    Theme URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+*/
 /* --- General --- */
 body {
 	font-family:'Montserrat',sans-serif;
@@ -28,8 +34,8 @@ img {max-width: 100%;}
 }
 .menu {
 	margin-top:0px;
-/* 	position:absolute;
-	 */	z-index:999;
+	position:absolute;
+	z-index:999;
 	left:0px;
 	right:0px;
 	bottom:0;
@@ -142,8 +148,8 @@ img {max-width: 100%;}
 	.navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;font-size: 13px;}
 }
 /* --- Intro --- */
-/* header {
-	padding-bottom:80px; */
+header {
+	padding-bottom:50px;
 }
 .intro {
 	font-family:'Playball',cursive;
@@ -182,7 +188,7 @@ img {max-width: 100%;}
 	font-family:'Playball',cursive;
 	font-size:35px;
 	color:#333;
-	margin:40px;
+	margin:0;
 	padding:5px;
 }
 .heading h2::first-letter {
@@ -269,11 +275,6 @@ img#site-title {
   background: #db3615;
 }
 
-.progress .color5,
-.progress .color5 .bar-width{
-  background: #a742f4;
-}
-
 .progress, 
 .progress-bar {
   height: 15px;
@@ -333,10 +334,6 @@ img#site-title {
 
 .progress .color4 span:before{
   border-color: #db3615 transparent transparent transparent;
-}
-
-.progress .color5 span:before{
-  border-color: #a742f4 transparent transparent transparent;
 }
 .specialties img {
 	margin-top:30px;
