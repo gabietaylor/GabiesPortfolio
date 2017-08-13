@@ -70,10 +70,10 @@
 		// items total
 		this.itemsCount = this.gridItems.length;
 		// slideshow grid
-		this.slideshow = this.el.querySelector( 'section.slideshow > ul' );
-		// slideshow grid items
-		this.slideshowItems = [].slice.call( this.slideshow.children );
-		// index of current slideshow item
+/*		this.slideshow = this.el.querySelector( 'section.slideshow > ul' );
+*/		// slideshow grid items
+/*		this.slideshowItems = [].slice.call( this.slideshow.children );
+*/		// index of current slideshow item
 		this.current = -1;
 		// slideshow control buttons
 		this.ctrlPrev = this.el.querySelector( 'section.slideshow > nav > span.nav-prev' );
@@ -114,7 +114,7 @@
 		window.addEventListener( 'resize', function() { self._resizeHandler(); } );
 
 		// keyboard navigation events
-		document.addEventListener( 'keydown', function( ev ) {
+/*		document.addEventListener( 'keydown', function( ev ) {
 			if ( self.isSlideshowVisible ) {
 				var keyCode = ev.keyCode || ev.which;
 
@@ -130,10 +130,10 @@
 						break;
 				}
 			}
-		} );
+		} );*/
 
 		// trick to prevent scrolling when slideshow is visible
-		window.addEventListener( 'scroll', function() {
+/*		window.addEventListener( 'scroll', function() {
 			if ( self.isSlideshowVisible ) {
 				window.scrollTo( self.scrollPosition ? self.scrollPosition.x : 0, self.scrollPosition ? self.scrollPosition.y : 0 );
 			}
@@ -141,26 +141,26 @@
 				self.scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
 			}
 		});
-	};
+	};*/
 
-	CBPGridGallery.prototype._openSlideshow = function( pos ) {
+	/*CBPGridGallery.prototype._openSlideshow = function( pos ) {
 		this.isSlideshowVisible = true;
 		this.current = pos;
 
-		classie.addClass( this.el, 'slideshow-open' );
+		classie.addClass( this.el, 'slideshow-open' );*/
 
 		/* position slideshow items */
 
 		// set viewport items (current, next and previous)
-		this._setViewportItems();
+		/*this._setViewportItems();
 		
 		// add class "current" and "show" to currentItem
 		classie.addClass( this.currentItem, 'current' );
-		classie.addClass( this.currentItem, 'show' );
+		classie.addClass( this.currentItem, 'show' );*/
 
 		// add class show to next and previous items
 		// position previous item on the left side and the next item on the right side
-		if( this.prevItem ) {
+/*		if( this.prevItem ) {
 			classie.addClass( this.prevItem, 'show' );
 			var translateVal = Number( -1 * ( getViewportW() / 2 + this.prevItem.offsetWidth / 2 ) );
 			setTransform( this.prevItem, support.support3d ? 'translate3d(' + translateVal + 'px, 0, -150px)' : 'translate(' + translateVal + 'px)' );
@@ -177,7 +177,7 @@
 		if( dir === 'next' && this.current === this.itemsCount - 1 ||  dir === 'prev' && this.current === 0  ) {
 			this._closeSlideshow();
 			return;
-		}
+		}*/
 
 		this.isAnimating = true;
 		
