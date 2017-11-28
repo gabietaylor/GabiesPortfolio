@@ -34,7 +34,7 @@ img {max-width: 100%;}
 }
 .menu {
 	margin-top:0px;
-	position:absolute;
+	position:relative;
 	z-index:999;
 	left:0px;
 	right:0px;
@@ -149,7 +149,7 @@ img {max-width: 100%;}
 }
 /* --- Intro --- */
 header {
-	padding-bottom:50px;
+	padding-bottom:0px;
 }
 .intro {
 	font-family:'Playball',cursive;
